@@ -1,0 +1,112 @@
+body {
+    font-family: 'calibri', regular;
+    font-size: 20px;
+    line-height: 120%;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+h1 {
+    text-align: left;
+    font-size: 60px;
+    line-height: 100%;
+    color: black;
+}
+
+h1.b {
+    padding: 0 0.6em;
+}
+
+h2 {
+    padding: 0 0.6em;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    padding: 0 0.9em;
+}
+
+p {
+    padding: 0 1.25em;
+}
+
+a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.ref {
+    padding: 0em;
+    background-color: rgba(0, 0, 0, 0.1)!important;
+    font-size: 10px;
+}
+
+html {
+    height: 100%;
+    color: rgb(0, 0, 0);
+    line-height: 1.8;
+}
+
+
+/* Create a Parallax Effect */
+
+.bgimg-1,
+.bgimg-1b,
+.bgimg-2,
+.bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* First bck media */
+
+.bgimg-1 {
+    background-image: url("../images/cdp-home-bg-4k.png");
+    background-color: rgba(173, 173, 173, 0.2);
+    min-height: 100%;
+}
+
+.bgimg-1b {
+    background-color: transparent;
+    min-height: 100%;
+}
+
+
+/* Second bck media */
+
+.bgimg-2 {
+    background-image: url("../images/cc-guide.jpg");
+    background-color: #F26D3D;
+    min-height: 400px;
+}
+
+
+/* Third bck media */
+
+.bgimg-3 {
+    background-image: url("../images/plastic rush/reuse.jpg");
+    background-color: #F26D3D;
+    min-height: 400px;
+}
+
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}

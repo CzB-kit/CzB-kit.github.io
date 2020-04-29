@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>Design: Démystification d'une discipline</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href=".\CSS/style.css">
+<link rel="stylesheet" href=".\CSS/grid-style.css">
+
+<link rel="stylesheet" href=".\CSS/w3.css">
+<link rel="stylesheet" href=".\CSS/w3min.css">
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block color-b w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index: 3; width: 250px; font-weight: bold; display: none; right: 0px;" id="mySidebar">
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-right">✖</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Part 0</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Part 01</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Part 02</a>
+    </nav>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+
+            <a href="#home" class="w3-bar-item w3-button color-c w3-hide-small">CommunDesignProbleme.fr</a>
+            <a href="CDP-design.html" class="w3-bar-item w3-button color-b">DESIGN: Démystification d'une discipline.</a>
+
+            <a href="javascript:void(0)" class="w3-right w3-button" onclick="w3_open()">☰</a>
+            <span class="w3-right w3-button">
+                <a href="index.html">⬅</a>
+                <a href="#">➡</a>
+            </span>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!--ELEMENT-->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+
+        <h2>DESIGN: Démystification d'une discipline.</h2>
+
+        <iframe frameborder="0" style="width:100%;height:2000px;" scrolling="no" src="./Line mind map\Design/Design Demystification.html"></iframe>
+
+
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Footer -->
+    <footer class="w3-center color-b w3-padding-64">
+        <h3><img src="./images/cc-by.png" alt="Licence cc-by" style="height:100%;"> Attribution - Pas d’Utilisation Commerciale CC BY-NC</h3>
+
+    </footer>
+
+    <!-- Tag cloud -->
+    <script src='.\script/jquery.min.js'></script>
+    <script src='.\script/jquery.svg3dtagcloud.min.js'></script>
+    <script src="./CDP0.js"></script>
+
+    <!-- Global -->
+    <script src='.\script/global.js'></script>
+
+
+</body>
+
+</html>

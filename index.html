@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<title>Commun Design Problème</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href=".\CSS/style.css">
+<link rel="stylesheet" href=".\CSS/grid-style.css">
+
+<link rel="stylesheet" href=".\CSS/w3.css">
+<link rel="stylesheet" href=".\CSS/w3min.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block color-b w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index: 3; width: 250px; font-weight: bold; display: none; right: 0px;" id="mySidebar">
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-right">✖</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Part 0</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Part 01</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Part 02</a>
+    </nav>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+
+            <a href="#" class="w3-bar-item w3-button color-c">CommunDesignProbleme.fr</a>
+            <a href="#" class="w3-bar-item w3-button color-b w3-hide-small">Cériez Baptiste</a>
+
+            <a href="javascript:void(0)" class="w3-right w3-button" onclick="w3_open()">☰</a>
+            <span class="w3-right w3-button">
+                <a href="#">⬅</a>
+                <a href="CDP-design.html">➡</a>
+            </span>
+
+
+        </div>
+
+
+    </div>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor: pointer; display: none;" title="close side menu" id="myOverlay"></div>
+
+    <br>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <center id='tag-cloud'></center>
+    </div>
+
+    <!-- Sous-Titre auto ajust -->
+    <div class="w3-row w3-center color-G w3-padding-16">
+        <h1 class="b">Comment l’utopie des communs est devenu un problème pour le design.</h1>
+    </div>
+
+    <!--Abstract-->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+
+        <h2>Abstract</h2>
+        <div class="grid__col--3">
+            <div class="col">
+                <p>L’utilisateur se doit de faire face à un monde de plus en plus consumériste. Si tout appartient à une autorité et est sous contrôle, que reste-t-il à l’individu ? Pouvons-nous encore profiter de ce que la terre nous offre sans être en
+                    illégalité et sans gêner notre voisin ? Comment faciliter l’accès aux éléments communs et comment les préserver pour les générations futures? Dans un monde où les ressources semblent disparaître, la maîtrise et la compréhension de
+                    l’utilisateur nous échappe.
+                </p>
+            </div>
+            <div class="col">
+                <p>Sophie Pène définie les biens communs comme des choses qui : « n’appartiennent à personne et dont l’usage est commun à tous... ». L’eau, l’air et les connaissances appartiennent à tous et sont donc ce que l’on nomme traditionnellement
+                    des « communs ». Les communs sont des ressources vulnérables qui sont indispensables à protéger pour en assurer l’usage par chacun·e.
+                </p>
+            </div>
+
+            <div class="col">
+                <img src="./images/cc-guide.jpg" alt="Creative Commons guidant les contributeurs" style="width:100%;">
+                <p class="ref">
+                    <cite>Les Creative Commons guidant les contributeurs,</cite> Ju gatsu mikka. Wikipedia - inspirée de la Liberté guidant le peuple d’Eugène Delacroix.
+                </p>
+            </div>
+
+
+            <div class="col01">
+                <div class="col">
+                    <p>Le design, en tant que discipline visant à améliorer et assurer un mode de vie soutenable, doit faire de la protection des biens communs une priorité. Cependant, où est son rôle dans la recherche d’une meilleure gouvernance de nos
+                        communs ? Peut-il garantir que chaque individu puisse bénéficier de ces biens ?</p>
+                </div>
+
+                <div class="col">
+                    <p>Ce mémoire cherche à amener l’éthique du designer dans cet optique, il vise à montrer et générer des idées pour aider les «commoneurs» contemporains à concrétiser des modèles de vie basés sur cette vision qui semble utopique.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Mode d'emploi du site web-->
+    <div class="w3-content w3-container" id="about">
+
+        <div class="grid__col--3">
+            <div class="col">
+                <img src="./images/objet-memoire/m-02b.png" alt="Creative Commons guidant les contributeurs" style="width:100%;">
+            </div>
+
+            <div class="col">
+                <img src="./images/objet-memoire/m-02c.png" alt="Creative Commons guidant les contributeurs" style="width:100%;">
+            </div>
+
+            <div class="col">
+                <img src="./images/objet-memoire/m-02d.png" alt="Creative Commons guidant les contributeurs" style="width:100%;">
+                <p class="ref">
+                    <cite>"Le pourquoi du commun",</cite> Cériez Baptiste. Totem mémoire (gravure sur PMMA recyclé) - ESAD Valenciennes. 2020.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="col01">
+            <div class="col">
+                <p>Afin de répondre à la problématique énoncée précédement, j'ai pour cela mis en place ce site internet permettant à vous lecteur de bénéficier en partie des mêmes points de vues que j'ai eu durant l'élaboration de ce mémoire. De cette manière,
+                    je souhaite vous inviter à interagir avec les différents éléments de ce mémoire afin de vérifier si oui ou non le design peut réaliser la vision des communs.</p>
+            </div>
+
+            <div class="col">
+                <p>Vous pouvez donc glaner librement les informations en interagissant avec la sphère des ressources, ou suivre une de mes lectures</p>
+            </div>
+
+
+        </div>
+
+        <div class="col01">
+            <div class="col">
+                <p><a href="#home" class=""><i class=""></i>Retour à la navigation libre ⟶</a></p>
+            </div>
+
+        </div>
+
+        <div class="col01">
+            <div class="col">
+                <p><a href="CDP-design.html" class=""><i class=""></i>Suivant ⟶</a></p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <br>
+    <br>
+
+    <!-- Footer -->
+    <footer class="w3-center color-b w3-padding-64">
+        <h3><img src="./images/cc-by.png" alt="Licence cc-by" style="height:100%;"> Attribution - Pas d’Utilisation Commerciale CC BY-NC</h3>
+
+    </footer>
+
+    <!-- Tag cloud -->
+    <script src='.\script/jquery.min.js'></script>
+    <script src='.\script/jquery.svg3dtagcloud.min.js'></script>
+    <script src="./CDP0.js"></script>
+
+    <!-- Global -->
+    <script src='.\script/global.js'></script>
+
+
+</body>
+
+</html>

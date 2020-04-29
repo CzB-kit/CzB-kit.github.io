@@ -1,0 +1,203 @@
+/*texte soulignée ou barrée + */
+
+.under {
+    text-decoration: underline black;
+}
+
+.line {
+    text-decoration: line-through black;
+}
+
+
+/*texte soulignée ou barrée - */
+
+[class^="grid__"],
+[class*=" grid__"] {
+    zoom: 1;
+}
+
+[class^="grid__"]:before,
+[class*=" grid__"]:before,
+[class^="grid__"]:after,
+[class*=" grid__"]:after {
+    content: " ";
+    display: table;
+}
+
+[class^="grid__"]:after,
+[class*=" grid__"]:after {
+    clear: both;
+}
+
+[class^="grid__"],
+[class*=" grid__"] {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+[class^="grid__"] .col,
+[class*=" grid__"] .col {
+    background-color: rgba(67, 190, 217, 0.05);
+    color: #000;
+    float: left;
+    margin: 0 0 0.9375em 1.6%;
+    margin-left: 0em;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+@media (max-width: 30em) {
+    [class^="grid__"] .col,
+    [class*=" grid__"] .col {
+        margin-left: 0;
+    }
+}
+
+[class^="grid__"] .col .col,
+[class*=" grid__"] .col .col {
+    margin-bottom: 0;
+}
+
+@media (min-width: 30em) {
+    .grid__col--2>.col,
+    .grid__col--3>.col,
+    .grid__col--4>.col,
+    .grid__col--5>.col,
+    .grid__col--6>.col {
+        width: 49.2%;
+    }
+    .grid__col--2>.col:nth-child(n),
+    .grid__col--3>.col:nth-child(n),
+    .grid__col--4>.col:nth-child(n),
+    .grid__col--5>.col:nth-child(n),
+    .grid__col--6>.col:nth-child(n) {
+        clear: none;
+        margin-left: 1.6%;
+    }
+    .grid__col--2>.col:nth-child(2n+1),
+    .grid__col--3>.col:nth-child(2n+1),
+    .grid__col--4>.col:nth-child(2n+1),
+    .grid__col--5>.col:nth-child(2n+1),
+    .grid__col--6>.col:nth-child(2n+1) {
+        clear: left;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 40em) {
+    .grid__col--3>.col,
+    .grid__col--4>.col,
+    .grid__col--5>.col,
+    .grid__col--6>.col {
+        width: 32.2666666667%;
+    }
+    .grid__col--3>.col:nth-child(n),
+    .grid__col--4>.col:nth-child(n),
+    .grid__col--5>.col:nth-child(n),
+    .grid__col--6>.col:nth-child(n) {
+        clear: none;
+        margin-left: 1.6%;
+    }
+    .grid__col--3>.col:nth-child(3n+1),
+    .grid__col--4>.col:nth-child(3n+1),
+    .grid__col--5>.col:nth-child(3n+1),
+    .grid__col--6>.col:nth-child(3n+1) {
+        clear: left;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 52.5em) {
+    .grid__col--4>.col,
+    .grid__col--5>.col,
+    .grid__col--6>.col {
+        width: 23.8%;
+    }
+    .grid__col--4>.col:nth-child(n),
+    .grid__col--5>.col:nth-child(n),
+    .grid__col--6>.col:nth-child(n) {
+        clear: none;
+        margin-left: 1.6%;
+    }
+    .grid__col--4>.col:nth-child(4n+1),
+    .grid__col--5>.col:nth-child(4n+1),
+    .grid__col--6>.col:nth-child(4n+1) {
+        clear: left;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 60em) {
+    .grid__col--5>.col,
+    .grid__col--6>.col {
+        width: 18.72%;
+    }
+    .grid__col--5>.col:nth-child(n),
+    .grid__col--6>.col:nth-child(n) {
+        clear: none;
+        margin-left: 1.6%;
+    }
+    .grid__col--5>.col:nth-child(5n+1),
+    .grid__col--6>.col:nth-child(5n+1) {
+        clear: left;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 75em) {
+    .grid__col--6>.col {
+        width: 15.3333333333%;
+    }
+    .grid__col--6>.col:nth-child(n) {
+        clear: none;
+        margin-left: 1.6%;
+    }
+    .grid__col--6>.col:nth-child(6n+1) {
+        clear: left;
+        margin-left: 0;
+    }
+}
+
+.col01 {
+    margin-top: 0em;
+    height: auto;
+    background-color: rgba(67, 190, 217, 0.05);
+    padding-left: 0px;
+}
+
+.page {
+    margin: 1 auto;
+    max-width: 1920px;
+    height: auto;
+    background-color: #FFFFFF;
+    padding-left: 0px;
+}
+
+.sujet-div {
+    margin: 0 auto;
+    max-width: 1920px;
+    height: auto;
+    background-color: #F27405;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.center-div {
+    margin: 0 auto;
+    max-width: 700px;
+    height: auto;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #000!important;
+    border-radius: 0px;
+}
+
+.full-image {
+    margin: 1 auto;
+    max-width: 1920px;
+    height: auto;
+    background-color: rgb(255, 4, 213);
+    padding-bottom: em;
+    padding-top: 0em;
+}
